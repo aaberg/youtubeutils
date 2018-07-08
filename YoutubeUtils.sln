@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeUtils.CLI", "YoutubeUtils.CLI\YoutubeUtils.CLI.csproj", "{8CD0C27A-C264-42BF-8FEC-5ADE0CF05268}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeUtils.Tools", "YoutubeUtils.Tools\YoutubeUtils.Tools.csproj", "{788F5B05-E975-4BDE-9EBA-4A3B1DE81284}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CD0C27A-C264-42BF-8FEC-5ADE0CF05268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CD0C27A-C264-42BF-8FEC-5ADE0CF05268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CD0C27A-C264-42BF-8FEC-5ADE0CF05268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CD0C27A-C264-42BF-8FEC-5ADE0CF05268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{788F5B05-E975-4BDE-9EBA-4A3B1DE81284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{788F5B05-E975-4BDE-9EBA-4A3B1DE81284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{788F5B05-E975-4BDE-9EBA-4A3B1DE81284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{788F5B05-E975-4BDE-9EBA-4A3B1DE81284}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
