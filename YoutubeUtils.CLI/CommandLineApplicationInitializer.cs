@@ -7,11 +7,13 @@ namespace YoutubeUtils.CLI
     {
         private readonly ISubscriptionCommand _subscriptionCommand;
         private readonly IChannelCommand _channelCommand;
+        private readonly ILikedVideoCommand _likedVideoCommand;
         
-        public CommandLineApplicationInitializer(ISubscriptionCommand subscriptionCommand, IChannelCommand channelCommand)
+        public CommandLineApplicationInitializer(ISubscriptionCommand subscriptionCommand, IChannelCommand channelCommand, ILikedVideoCommand likedVideoCommand)
         {
             _subscriptionCommand = subscriptionCommand;
             _channelCommand = channelCommand;
+            _likedVideoCommand = likedVideoCommand;
         }
         
         public CommandLineApplication Initializer()
@@ -36,6 +38,7 @@ namespace YoutubeUtils.CLI
             // setup commands
             cmd.Command("subscription", application => _subscriptionCommand.Configure(application));
             cmd.Command("channel", application => _channelCommand.Configure(application));
+            cmd.Command("liked-videos", application => _likedVideoCommand.Configure(application));
 
             return cmd;
         }

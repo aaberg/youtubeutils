@@ -17,10 +17,12 @@ namespace YoutubeUtils.CLI
                 // Configure services
                 .AddSingleton<ISubscriptionService, SubscriptionService>()
                 .AddSingleton<IChannelService, ChannelService>()
+                .AddSingleton<IVideoService, VideoService>()
                 
                 // Configure commands
                 .AddSingleton<ISubscriptionCommand, SubscriptionCommand>()
                 .AddSingleton<IChannelCommand, ChannelCommand>()
+                .AddSingleton<ILikedVideoCommand, LikedVideoCommand>()
                 
                 // Configure CommandLine Initializer
                 .AddSingleton<ICommandLineApplicationInitializer, CommandLineApplicationInitializer>()
